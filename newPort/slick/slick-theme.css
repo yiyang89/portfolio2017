@@ -151,13 +151,13 @@
 .slick-dots li button
 {
     font-size: 0;
-    line-height: 0;
+    line-height: 50px;
 
     display: block;
 
     width: 20px;
     height: 20px;
-    padding: 5px;
+    /*padding: 10px;*/
 
     cursor: pointer;
 
@@ -179,8 +179,8 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 30px;
 
     position: absolute;
     top: 0;
