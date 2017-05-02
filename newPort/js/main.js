@@ -4,7 +4,7 @@ $(document).ready(function(){
     slidesToScroll: 1,
     dots: true,
     infinite: true,
-    cssEase: 'linear',
+    cssEase: 'ease',
     swipeToSlide: true,
     swipe: true,
     responsive: true
@@ -20,7 +20,8 @@ $(document).ready(function(){
     vertical: true,
     appendDots: $('.sliderdots'),
     arrows: false,
-    responsive: true
+    responsive: true,
+    accessibility: false
   })
   $.browserSwipe({
     up: function(){
@@ -31,10 +32,14 @@ $(document).ready(function(){
     }
   });
   $('body').keydown(function(event) {
-    if (event.keyCode == 38 || event.keyCode == 37) {
+    if (event.keyCode == 38) {
       $('.vertical-slider').slick('slickPrev');
-    } else if (event.keyCode == 40 || event.keyCode == 39) {
+    } else if (event.keyCode == 40) {
       $('.vertical-slider').slick('slickNext');
+    } else if (event.keyCode == 37) {
+      $('.single-item').slick('slickPrev');
+    } else if (event.keyCode == 39) {
+      $('.single-item').slick('slickNext');
     }
   })
 });

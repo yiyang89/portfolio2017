@@ -39,12 +39,6 @@ a:hover {
   text-decoration: none;
 }
 
-.topnav {
-  font-size: 14px;
-  padding-left: 0px !important;
-  /*width: 90%;*/
-}
-
 .slide-section {
   height: 100vh !important;
   width: 100vw !important;
@@ -64,6 +58,14 @@ a:hover {
   padding: 0 !important;
 }
 
+.slick-slide {
+  height: 100vh !important;
+}
+
+.single-item .slick-slide {
+  height: auto !important;
+}
+
 .navbar {
   background-color: transparent;
 }
@@ -75,9 +77,8 @@ a:hover {
 }
 
 .intro-header {
-  padding-top: 50px;
+  padding-top: 60px;
   /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-  padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
   /*background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://res.cloudinary.com/yiyang/image/upload/v1490971436/macbook-stock-photo2_dccyis.png') no-repeat center center;*/
@@ -85,6 +86,8 @@ a:hover {
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  padding-bottom: 60px;
+  overflow: hidden;
 }
 
 .intro-message {
@@ -167,6 +170,7 @@ a:hover {
   /*padding: 50px 0;*/
   height: 100%;
   width: 100%;
+  /*padding-top: 60px;*/
   /*background-color: #f8f8f8;*/
   background-color: rgba(3, 169, 244, 0.3);
   text-align: center;
@@ -176,9 +180,15 @@ a:hover {
   /*padding: 50px;*/
   height: 100%;
   width: 100%;
-  border-top: 1px solid #e7e7e7;
-  border-bottom: 1px solid #e7e7e7;
+  /*padding-top: 60px;*/
+  /*border-top: 1px solid #e7e7e7;*/
+  /*border-bottom: 1px solid #e7e7e7;*/
   background-color: rgba(0, 188, 212, 0.3);
+}
+
+.content-section-b .slick-dots li button:before {
+  font-size: 9px;
+  line-height: 15px;
 }
 
 .Aligner {
