@@ -39,6 +39,11 @@ h6 {
   /*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
 }
 
+.slide-hint {
+  position: absolute;
+  bottom: 9%;
+}
+
 h1 {
   font-size: 6em;
 }
@@ -297,6 +302,13 @@ a:hover {
   margin: 2rem;
   width: 40%;
   margin-top: 0;
+  font-size: 2rem;
+}
+
+@media(max-height:900px) {
+  .card p {
+    font-size: 1.4rem;
+  }
 }
 
 .card img{

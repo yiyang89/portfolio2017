@@ -7,9 +7,9 @@ $(document).ready(function(){
     cssEase: 'ease',
     swipeToSlide: true,
     swipe: true,
-    responsive: true
-    // autoplay: true,
-    // autoplaySpeed: 3000
+    responsive: true,
+    autoplay: true,
+    autoplaySpeed: 3000
   });
   $('.vertical-slider').slick({
     slidesToShow: 1,
@@ -63,40 +63,4 @@ $(document).ready(function(){
   $('.fa-arrow-up').click(function() {
     $('.vertical-slider').slick('slickPrev');
   });
-
-  // var touchstartX = 0;
-  // var touchstartY = 0;
-  // var touchendX = 0;
-  // var touchendY = 0;
-//
-  // document.body.addEventListener('touchstart', function(event) {
-  //     // touchstartX = event.screenX;
-  //     // touchstartY = event.screenY;
-  //     touchstartX = event.changedTouches[0].screenX;
-  //     touchstartY = event.changedTouches[0].screenY;
-  // }, false);
-  //
-  // document.body.addEventListener('touchend', function(event) {
-  //     // touchendX = event.screenX;
-  //     // touchendY = event.screenY;
-  //     touchendX = event.changedTouches[0].screenX;
-  //     touchendY = event.changedTouches[0].screenY;
-  //     handleGesture();
-  // }, false);
-  //
-  // function handleGesture() {
-  //     // alert('Swipe');
-  //     // console.log('swipe');
-  //     var swiped = 'swiped:';
-  //     // console.log("START Y:" + touchstartY);
-  //     // console.log("END Y:"+touchendY);
-  //     if (touchendY < touchstartY) {
-  //       // console.log("swipe up");
-  //       $('.vertical-slider').slick('slickPrev');
-  //     }
-  //     if (touchendY > touchstartY) {
-  //       // console.log("swipe down");
-  //       $('.vertical-slider').slick('slickNext');
-  //     }
-  // }
 });
