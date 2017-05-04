@@ -71,8 +71,8 @@
     line-height: 1;
 
     opacity: .75;
-    /*color: white;*/
-    color: #4B515D;
+    color: white;
+    /*color: #4B515D;*/
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -193,7 +193,8 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    /*color: black;*/
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -201,5 +202,6 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    /*color: black;*/
+    color: white;
 }
