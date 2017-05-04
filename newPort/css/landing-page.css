@@ -40,6 +40,7 @@ h6 {
 }
 
 .slide-hint {
+  /*left:43.5%;*/
   position: absolute;
   bottom: 9%;
 }
@@ -122,10 +123,10 @@ a:hover {
   color: rgba(3, 169, 244, 0.8) !important;
 }
 
-.nav-hint {
+/*.nav-hint {
   position: absolute;
   bottom: 0;
-}
+}*/
 
 .lead {
   font-size: 18px;
@@ -202,9 +203,11 @@ a:hover {
   .card {
     display: flex;
     flex-direction: column;
+    /*width: 80vw !important;*/
   }
   .card img {
     height: 30vh !important;
+    /*width: 80vw !important;*/
   }
   .card p {
     font-size: 1rem !important;
