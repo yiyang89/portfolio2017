@@ -29,12 +29,6 @@ $(document).ready(function(){
     down: function(){
       $('.vertical-slider').slick('slickNext');
     },
-    left: function(){
-      $('.single-item').slick('slickPrev');
-    },
-    right: function(){
-      $('.single-item').slick('slickNext');
-    }
   });
   $('body').keydown(function(event) {
     if (event.keyCode == 38) {
@@ -52,13 +46,21 @@ $(document).ready(function(){
   });
   $('body').on('swipedown',function(event) {
     $('.vertical-slider').slick('slickNext');
-  })
+  });
+  $('body').on('swipeleft', function(event){
+    console.log("swipeleft");
+    $('.single-item').slick('slickPrev');
+  });
+  $('body').on('swiperight', function(event){
+    console.log("swiperight");
+    $('.single-item').slick('slickNext');
+  });
   $('.fa-arrow-down').click(function() {
     $('.vertical-slider').slick('slickNext');
   });
   $('.fa-arrow-up').click(function() {
     $('.vertical-slider').slick('slickPrev');
-  })
+  });
 
   // var touchstartX = 0;
   // var touchstartY = 0;
