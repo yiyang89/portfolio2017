@@ -1,0 +1,22 @@
+{
+  "name": "portfolio2017",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiyang89/portfolio2017.git"
+  },
+  "author": "Yiyang Kok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yiyang89/portfolio2017/issues"
+  },
+  "homepage": "https://github.com/yiyang89/portfolio2017#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
