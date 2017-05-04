@@ -10,7 +10,7 @@
 body,
 html {
   width: 103vw;
-  height: 102vh;
+  height: 100%;
   overflow: hidden;
   display: -webkit-flex;
   display: flex !important;
@@ -55,15 +55,13 @@ p {
 }
 
 #down-arrow {
-  top: 95%;
+  bottom: 0.5%;
   left:90%;
-  /*right:auto;*/
   z-index: 10;
 }
 #up-arrow{
-  top: 3%;
+  top: 0.5%;
   left:90%;
-  /*right:auto;*/
   z-index: 10;
 }
 #down-arrow:hover, #up-arrow:hover {
