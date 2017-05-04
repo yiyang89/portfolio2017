@@ -8,6 +8,8 @@ $(document).ready(function(){
     swipeToSlide: true,
     swipe: true,
     responsive: true
+    // autoplay: true,
+    // autoplaySpeed: 3000
   });
   $('.vertical-slider').slick({
     slidesToShow: 1,

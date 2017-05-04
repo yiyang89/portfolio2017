@@ -118,6 +118,11 @@ a:hover {
   color: rgba(3, 169, 244, 0.8) !important;
 }
 
+.nav-hint {
+  position: absolute;
+  bottom: 0;
+}
+
 .lead {
   font-size: 18px;
   font-weight: 400;
@@ -139,18 +144,6 @@ a:hover {
   width: 100vw;
   padding-bottom: 60px;
   overflow: hidden;
-}
-
-.intro-message {
-  position: relative;
-  padding-top: 45vh;
-  padding-bottom: 35vh;
-}
-
-.intro-divider {
-  width: 400px;
-  border-top: 1px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .btn-social {
@@ -297,6 +290,7 @@ a:hover {
  font-size: 2rem;
  border-radius: 2px;
  width: 100%;
+ outline: none;
 }
 
 .card p {
