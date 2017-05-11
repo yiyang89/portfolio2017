@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.nav-guide').text('YK ~ ');
   $('.single-item').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -36,8 +37,10 @@ $(document).ready(function(){
   $('body').keydown(function(event) {
     if (event.keyCode == 38) {
       $('.vertical-slider').slick('slickPrev');
+      updateNavGuide();
     } else if (event.keyCode == 40) {
       $('.vertical-slider').slick('slickNext');
+      updateNavGuide();
     } else if (event.keyCode == 37) {
       $('.single-item').slick('slickPrev');
     } else if (event.keyCode == 39) {
@@ -60,8 +63,22 @@ $(document).ready(function(){
   // });
   $('.fa-arrow-down').click(function() {
     $('.vertical-slider').slick('slickNext');
+    updateNavGuide();
   });
   $('.fa-arrow-up').click(function() {
     $('.vertical-slider').slick('slickPrev');
+    updateNavGuide();
   });
+  function updateNavGuide() {
+    var currentIndex = $('.vertical-slider').slick('slickCurrentSlide');
+    if (currentIndex == 0) {
+      $('.nav-guide').text('YK ~ ');
+    } else if (currentIndex == 1) {
+      $('.nav-guide').text('YK ~ Skills');
+    } else if (currentIndex == 2) {
+      $('.nav-guide').text('YK ~ Portfolio');
+    } else if (currentIndex == 3) {
+      $('.nav-guide').text('YK ~ Contact');
+    }
+  }
 });

@@ -97,6 +97,15 @@ a:hover {
   z-index: 2;
 }
 
+.nav-guide {
+  position: fixed;
+  left: 2%;
+  top: 0.5%;
+  font-size: 3rem;
+  color: white;
+  z-index: 10;
+}
+
 .vertical-slider {
   margin: 0 !important;
   padding: 0 !important;
@@ -131,11 +140,6 @@ a:hover {
 .lead {
   font-size: 18px;
   font-weight: 400;
-}
-
-.resumecard {
-  width: 40vw !important;
-  height: auto;
 }
 
 .intro-header {
@@ -326,6 +330,22 @@ a:hover {
 
 .slick-dots {
   position: fixed;
+}
+
+.skillsArea {
+  height: 90%;
+  width: 90%;
+}
+
+.skillSection {
+  height: 33%;
+  font-size: 3rem;
+  width: 100%;
+  color: white;
+}
+
+.icon-area {
+  font-size: 5vmin;
 }
 
 .content-section-b .slick-dots {
