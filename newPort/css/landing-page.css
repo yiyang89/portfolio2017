@@ -340,12 +340,12 @@ a:hover {
 .skillSection {
   height: 33%;
   font-size: 3rem;
-  width: 60%;
+  width: 70%;
   color: white;
 }
 
 .icon-area {
-  font-size: 5vmin;
+  font-size: 8vmin;
 }
 
 .content-section-b .slick-dots {

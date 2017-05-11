@@ -79,7 +79,7 @@ $(document).ready(function(){
     } else if (currentIndex == 1) {
       $('.nav-guide').text('YK ~ Skills / Tools');
     } else if (currentIndex == 2) {
-      $('.nav-guide').text('YK ~ Portfolio');
+      $('.nav-guide').text('YK ~ Projects');
     } else if (currentIndex == 3) {
       $('.nav-guide').text('YK ~ Contact');
     }
