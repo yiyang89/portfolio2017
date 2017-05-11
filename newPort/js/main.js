@@ -69,12 +69,15 @@ $(document).ready(function(){
     $('.vertical-slider').slick('slickPrev');
     updateNavGuide();
   });
+  $('.sliderdots').click(function() {
+    updateNavGuide();
+  })
   function updateNavGuide() {
     var currentIndex = $('.vertical-slider').slick('slickCurrentSlide');
     if (currentIndex == 0) {
       $('.nav-guide').text('YK ~ ');
     } else if (currentIndex == 1) {
-      $('.nav-guide').text('YK ~ Skills');
+      $('.nav-guide').text('YK ~ Skills / Tools');
     } else if (currentIndex == 2) {
       $('.nav-guide').text('YK ~ Portfolio');
     } else if (currentIndex == 3) {
