@@ -10,7 +10,7 @@ $(document).ready(function(){
     swipe: true,
     responsive: true,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 6000
   });
   $('.vertical-slider').slick({
     slidesToShow: 1,
